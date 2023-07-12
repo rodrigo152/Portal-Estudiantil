@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortalCertus</title>
+</head>
+<body>
+<!-- Barra de Navegacion -->
+<nav class="navbar navbar-expand-lg nav-1">
+  <div class="container-fluid nav-2">
+  <!-- Portal Certus / -->
+      <a class="navbar-brand" type="button" >
+          <img [src] ="ImagePath"
+          title="pasar">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- FIN DEL LOGO DE CERTUS -->
+
+  <!-- SECCIONES DE LA BARRA DE NAVEGACION -->
+  <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="#">Area Personal</a>
+      </li>
+      <li class="nav-item">
+          <button (click)="listam()" class="nav-link text-light" >Nuevo Estudiante</button>
+      </li>
+      <li class="nav-item">
+          <button (click)="listap()" class="nav-link text-light"  >Nuevo Docente</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link text-light" (click)="social()" >Apartado social</button>
+      </li>
+      <li class="nav-item">
+          <button class="nav-link text-light" (click)="noticias()">Noticias</button>
+      </li>
+      </ul>
+  <!-- FIN DE LA BARRA DE NAVEGACION -->
+
+  <!-- DESPLIEGUE DE LOS ICONOS DE LA BARRA DE NAVEGACION -->
+  <!-- DESPLIEGUE DEL ICONO DE HERRAMIENTA -->
+  <div class="nav-item dropdown notificaciones-2">
+    <img class="notificaciones-1" href="#" role="button" data-bs-toggle="dropdown" [src]="herramienta1">
+        <a class="navbar-brand" ></a>
+    <a>
+
+    </a>
+</div>
+  <!-- FIN DEL DESPLIEGUE DEL ICONO DE HERRAMIENTA -->
+  <!-- DESPLIEGUE DE LOS DEMAS ICONOS DE LA BARRA DE NAVEGACION -->
+      <a class="navbar-brand" >
+          <img class="notificaciones-1" [src]="notificaciones" alt="cuando no aparezca" title="pasar">
+      </a>
+      <a class="navbar-brand" >
+          <img class="notificaciones-1" [src]="whatsapp" alt="cuando no aparezca" title="pasar">
+      </a>
+  <!-- FIN DEL DESPLIEGUE DE LOS DEMAS ICONOS DE LA BARRA DE NAVEGACION -->
+  <!-- ICONO DEL USER -->
+      <a class="navbar-brand" >
+      <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-outline-success" type="submit">
+                  <img class="user" [src]="user" alt="cuando no aparezca" title="pasar">
+              </button>
+      </a>
+  <!-- FIN DEL ICONO DEL USER -->
+
+  </div>
+  </div>
+</nav>
+
+
+<!-- AQUI ESTA EL MENU DESPLEGABLE LATERAL -->
+<div class="container">
+      <div class="btn-menu container-desplegable">
+          <label for="btn-menu">
+              <!-- ☰ -->
+              <br>
+              <img [src]="flecha22" alt="" class="flecha">
+          </label>
+      </div>
+
+  <!-- OPCIONES DEL MENU LATERAL -->
+
+      <input type="checkbox" id="btn-menu" >
+          <div class="container-menu derecha">
+              <div class="cont-menu ">
+              <br>
+              <h4 class="text-light">Proximos eventos..</h4>
+                  <nav>
+                      <a href="#">ÉTICA EN LOS NEGOCIOS</a>
+                      <a href="#">DIS DE SOLUC BASADAS EN SERVIC</a>
+                      <a href="#">ANÁLISIS Y DISEÑO DE SOFTWARE</a>
+                      <a href="#">ANÁLISIS Y DISEÑO DE SOFTWARE</a>
+                      <a href="#">ÉTICA EN LOS NEGOCIOS</a>
+                      <a href="#">DIS DE SOLUC BASADAS EN SERVIC</a>
+                  </nav>
+                  <label for="btn-menu">✖️</label>
+              </div>
+          </div>
+<!-- FIN DEL MENU DESPLEGABLE LATERAL -->
+
+<!-- MENU DE ANUNCIOS -->
+  <div class="ccc">
+      <div id="carouselExample" class="carousel slide">
+          <h1></h1>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img [src]="circulo11" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img [src]="circulo22" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+              <img [src]="circulo33" class="d-block w-100" alt="...">
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+      </div>
+  </div>
+<!-- FIN DEL MENU DE ANUNCIOS -->
+
+  <div>
+
+      <h3>Bienvenido Estudiante, aqui dejamos los cursos y talleres</h3>
+
+<!-- boton Buscar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="#">TODOS</a>
+
+          <div class=" navbar-collapse" id="navbarScroll">
+              <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="TEXTEA" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+<!-- FIN DE LA OPCION BUSCAR -->
+
+<br><br>
+<div class="container">
+<div class="row row-cols-1 row-cols-md-3 g-4 card-1">
+
+<div class="col" *ngFor="let course of course ">
+  <div class="card" >
+      <button class="boton" >
+          <a >
+              <img [src]="course.imagen" class="card-img-top" alt="..." height="280px">
+          </a>
+      </button>
+      <div class="card-body"  >
+      <h5 class="card-title" type="button" (click)="detalle(course.id)">{{course.nombre}}</h5>
+      <p class="card-text">{{course.subnombre}}</p>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+<br><br>
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Certus</h6>
+        <p class="text-justify">www.certus.edu.pe<i>CERTUS</i> Conoce nuestro Instituto en Chiclayo, en la urbanización Los Parques. ¡CERTUS cada vez más cerca a tí! Ingresa para más información sobre las carreras.</p>
+      </div>
+
+
+
+
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+     <a href="#">CERTUS</a>.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+

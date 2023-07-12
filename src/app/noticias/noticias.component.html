@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Barra de Navegacion -->
+<nav class="navbar navbar-expand-lg nav-1">
+    <div class="container-fluid nav-2">
+    <!-- Portal Certus / -->
+        <a class="navbar-brand" type="button" >
+            <img [src] ="ImagePath"
+            title="pasar">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- FIN DEL LOGO DE CERTUS -->
+
+    <!-- SECCIONES DE LA BARRA DE NAVEGACION -->
+    <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Area Personal</a>
+        </li>
+        <li class="nav-item">
+            <button (click)="listam()" class="nav-link text-light" >Nuevo Estudiante</button>
+        </li>
+        <li class="nav-item">
+            <button (click)="listap()" class="nav-link text-light"  >Nuevo Docente</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link text-light" (click)="social()">Apartado social</button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link text-light" (click)="noticias()">Noticias</button>
+        </li>
+        </ul>
+    <!-- FIN DE LA BARRA DE NAVEGACION -->
+
+    <!-- DESPLIEGUE DE LOS ICONOS DE LA BARRA DE NAVEGACION -->
+    <!-- DESPLIEGUE DEL ICONO DE HERRAMIENTA -->
+    <div class="nav-item dropdown notificaciones-2">
+      <img class="notificaciones-1" href="#" role="button" data-bs-toggle="dropdown" [src]="herramienta1">
+          <a class="navbar-brand" ></a>
+      <a>
+
+      </a>
+  </div>
+    <!-- FIN DEL DESPLIEGUE DEL ICONO DE HERRAMIENTA -->
+    <!-- DESPLIEGUE DE LOS DEMAS ICONOS DE LA BARRA DE NAVEGACION -->
+        <a class="navbar-brand" >
+            <img class="notificaciones-1" [src]="notificaciones" alt="cuando no aparezca" title="pasar">
+        </a>
+        <a class="navbar-brand" >
+            <img class="notificaciones-1" [src]="whatsapp" alt="cuando no aparezca" title="pasar">
+        </a>
+    <!-- FIN DEL DESPLIEGUE DE LOS DEMAS ICONOS DE LA BARRA DE NAVEGACION -->
+    <!-- ICONO DEL USER -->
+        <a class="navbar-brand" >
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class="btn btn-outline-success" type="submit">
+                    <img class="user" [src]="user" alt="cuando no aparezca" title="pasar">
+                </button>
+        </a>
+    <!-- FIN DEL ICONO DEL USER -->
+
+    </div>
+    </div>
+  </nav>
+
+
+  <!-- AQUI ESTA EL MENU DESPLEGABLE LATERAL -->
+  <div class="container">
+        <div class="btn-menu container-desplegable">
+            <label for="btn-menu">
+                <!-- ☰ -->
+                <br>
+                <img [src]="flecha22" alt="" class="flecha">
+            </label>
+        </div>
+
+    <!-- OPCIONES DEL MENU LATERAL -->
+
+        <input type="checkbox" id="btn-menu" >
+            <div class="container-menu derecha">
+                <div class="cont-menu ">
+                <br>
+                <h4 class="text-light">Proximos eventos..</h4>
+                    <nav>
+                        <a href="#">ÉTICA EN LOS NEGOCIOS</a>
+                        <a href="#">DIS DE SOLUC BASADAS EN SERVIC</a>
+                        <a href="#">ANÁLISIS Y DISEÑO DE SOFTWARE</a>
+                        <a href="#">ANÁLISIS Y DISEÑO DE SOFTWARE</a>
+                        <a href="#">ÉTICA EN LOS NEGOCIOS</a>
+                        <a href="#">DIS DE SOLUC BASADAS EN SERVIC</a>
+                    </nav>
+                    <label for="btn-menu">✖️</label>
+                </div>
+            </div>
+  <!-- FIN DEL MENU DESPLEGABLE LATERAL -->
+
+  <!-- MENU DE ANUNCIOS -->
+    <div class="ccc">
+        <div id="carouselExample" class="carousel slide">
+            <h1></h1>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img [src]="circulo11" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img [src]="circulo22" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img [src]="circulo33" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+  <!-- FIN DEL MENU DE ANUNCIOS -->
+
+    <div>
+
+        <h3>Bienvenido Estudiante, aqui dejamos los cursos y talleres</h3>
+
+  <!-- boton Buscar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">TODOS</a>
+
+            <div class=" navbar-collapse" id="navbarScroll">
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="TEXTEA" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  <!-- FIN DE LA OPCION BUSCAR -->
+
+   <!-- Columnas -->
+
+
+   <div class="container02">
+
+    <main class="content02">
+        <article class="article02">
+            <h1>Clases de negocios</h1>
+            <img src="https://prensarte.files.wordpress.com/2021/01/la-municipalidad-de-lima-y-el-instituto-certus-presentan-2-mil-medias-becas-en-carreras-de-educacion-superior-durante-primer-ano-de-estudio-para-jovenes-residentes-de-lima-metropolitana.jpeg?w=1220" width="550px" alt="">
+            <p>Tenemos el placer de invitarte a nuestras clases de negocio, donde tendrás la oportunidad de adquirir conocimientos clave,
+                desarrollar habilidades empresariales y explorar las diferentes facetas del mundo empresarial.
+                Ya sea que estés iniciando un nuevo negocio, buscando expandirte o simplemente deseando aprender más sobre el emocionante mundo de los negocios,
+                nuestras clases están diseñadas para brindarte las herramientas necesarias para triunfar.</p>
+            <p>¿Qué puedes esperar de nuestras clases de negocio?</p>
+            <p>1-Conocimientos Profundos: Nuestros expertos en negocios compartirán sus conocimientos y experiencia en áreas como planificación estratégica,
+                 marketing, finanzas, gestión de recursos humanos y más. Aprenderás las bases teóricas y prácticas necesarias para tomar decisiones informadas
+                  y enfrentar los desafíos empresariales con confianza.
+
+               2- Interacción y Networking: Durante nuestras clases, tendrás la oportunidad de conectarte con otros emprendedores y profesionales
+                del mundo empresarial. Establecerás contactos valiosos, compartirás ideas, experiencias y colaborarás en proyectos conjuntos.
+                El networking es fundamental para expandir tu red de contactos y abrir puertas a futuras oportunidades de negocio.</p>
+        </article>
+    </main>
+    <aside class="sidebar02">
+        <div>
+        <img src="https://th.bing.com/th/id/OIP.qEX5RHhC2Bnl4nHyqJfbTgHaF5?pid=ImgDet&rs=1" alt="" >
+        <br><br>
+        <h2>
+            ¡Descubre el fascinante mundo del software en nuestras Clases de Software!</h2>
+        <p>Estimado entusiasta de la tecnología,
+
+            Nos complace invitarte a nuestras Clases de Software, donde tendrás la oportunidad de
+            sumergirte en el emocionante campo del desarrollo de software y adquirir habilidades clave
+             para impulsar tu carrera en la industria tecnológica. Ya sea que seas un principiante curioso
+              o un profesional experimentado en busca de actualización, nuestras clases están diseñadas para
+              satisfacer tus necesidades y llevarte al siguiente nivel.</p>
+        </div>
+
+
+    </aside>
+
+
+</div>
+
+</body>
+</html>

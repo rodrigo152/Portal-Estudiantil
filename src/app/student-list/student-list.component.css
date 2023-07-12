@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(https://th.bing.com/th/id/R.c6e32834a6a742761150364bda5d8307?rik=mEgcsryZhZo19Q&riu=http%3a%2f%2fi.rtings.com%2fimages%2fburn-in-test%2fweek-10-uniformity-uj6300-blue-large.jpg&ehk=zqcJ23rqdAUa7XCWw%2fFIV2VnYC8ZQdfJ3nZcVpgnDc8%3d&risl=&pid=ImgRaw&r=0);
+height: 1000px;
+
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+}
+section{
+  text-align: center;
+}
+section button{
+margin-top: 2px;
+font-size: 20px;
+}
+
+section table{
+  margin-top: 60px;
+}
